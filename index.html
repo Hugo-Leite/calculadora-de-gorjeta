@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora de gorjeta</title>
+    </head>
+    <body>
+        <main>
+            <section class="values">
+                <div class="total">
+                    <label for="total">Total</label>
+                    <input type="number" id="total" name="total" />
+                </div>
+
+                <div class="tip-fee-area">
+                    <label for="tip-fee">Taxa da gorjeta</label>
+                    <div>
+                        <button id="rate-5%">5%</button>
+                        <button id="rate-10%">10%</button>
+                        <button id="rate-15%">15%</button>
+                        <button id="rate-25%">25%</button>
+                        <button id="rate-50%">50%</button>
+                        <input type="number" id="tip-fee" />
+                    </div>
+                </div>
+
+                <div class="number-people-area">
+                    <label for="number-people">Total</label>
+                    <input type="number" id="number-people" name="number-people" />
+                </div>
+            </section>
+
+            <section class="tip-info-area">
+                <div class="tip-info">
+                    <p>
+                        Valor da gorjeta <br />
+                        /Total
+                    </p>
+                    <p>R$ 00,00</p>
+                </div>
+
+                <div class="tip-info">
+                    <p>
+                        Valor da gorjeta <br />
+                        /Pessoa
+                    </p>
+                    <p>R$ 00,00</p>
+                </div>
+
+                <div class="tip-info">
+                    <p>
+                        Valor total <br />
+                        /Pessoa
+                    </p>
+                    <p>R$ 00,00</p>
+                </div>
+
+                <button id="reset">Reset</button>
+            </section>
+        </main>
+    </body>
+</html>
