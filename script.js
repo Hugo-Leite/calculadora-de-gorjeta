@@ -39,11 +39,9 @@ btnCalculate.addEventListener("click", () => {
         alert("Voçe precisa preencher os dados");
     } else {
         totalTipAmount = (parseFloat(value.value) * parseFloat(selectedPercentage)) / 100;
-        console.log(totalTipAmount);
         document.querySelector(".tip-total").textContent = formatedNumber(totalTipAmount);
 
         tipAmountPerPerson = parseFloat(totalTipAmount) / parseFloat(numberPeople.value);
-        console.log(tipAmountPerPerson);
         document.querySelector(".tip-per-person").textContent = formatedNumber(tipAmountPerPerson);
 
         totalAmountWithTip = parseFloat(value.value) + parseFloat(totalTipAmount);
