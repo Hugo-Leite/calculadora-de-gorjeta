@@ -13,6 +13,7 @@ Insira um gif ou um link de alguma demonstração
 O usuário tem que colocar o valor da conta, escolher a taxa da gorjeta e colocar o número de pessoas para pagar a conta.
 
 ## Link Projeto
+https://hugo-leite.github.io/calculadora-de-gorjeta/
 
 
 ## Funcionalidades
