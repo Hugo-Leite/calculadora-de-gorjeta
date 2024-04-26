@@ -6,9 +6,9 @@ gorjeta e o total divido por pessoa.
 
 ## Demonstração
 
-<a href="./assets/gif-demonstracao-1.gif"></a>
+<img src="./assets/gif-demonstracao-1.gif">
 
-<a href="./assets/gif-demonstracao-2.gif"></a>
+<img src="./assets/gif-demonstracao-2.gif">
 
 O usuário tem que colocar o valor da conta, escolher a taxa da gorjeta e colocar o número de pessoas
 para pagar a conta.
