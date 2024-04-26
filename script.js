@@ -38,16 +38,18 @@ btnCalculate.addEventListener("click", () => {
     if (value.value === "" || numberPeople.value === "") {
         alert("Voçe precisa preencher os dados");
     } else {
-        totalTipAmount = (value.value * parseFloat(selectedPercentage)) / 100;
+        totalTipAmount = (parseFloat(value.value) * parseFloat(selectedPercentage)) / 100;
+        console.log(totalTipAmount);
         document.querySelector(".tip-total").textContent = formatedNumber(totalTipAmount);
 
-        tipAmountPerPerson = parseFloat(selectedPercentage) / numberPeople.value;
+        tipAmountPerPerson = parseFloat(totalTipAmount) / parseFloat(numberPeople.value);
+        console.log(tipAmountPerPerson);
         document.querySelector(".tip-per-person").textContent = formatedNumber(tipAmountPerPerson);
 
-        totalAmountWithTip = parseFloat(value.value) + parseFloat(selectedPercentage);
+        totalAmountWithTip = parseFloat(value.value) + parseFloat(totalTipAmount);
         document.querySelector(".total-with-tip").textContent = formatedNumber(totalAmountWithTip);
 
-        totalPricePerPerson = totalAmountWithTip / numberPeople.value;
+        totalPricePerPerson = parseFloat(totalAmountWithTip) / parseFloat(numberPeople.value);
         document.querySelector(".total-per-person").textContent =
             formatedNumber(totalPricePerPerson);
     }
